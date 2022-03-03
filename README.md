@@ -19,7 +19,7 @@ Then, the following partial differential equation is solved
   <img height="90" src="https://user-images.githubusercontent.com/94921576/156393796-904aa2a3-b3be-4db3-bfda-e65fe8b400a5.png">
 </p>
 
-Therefore, the macroscopic displacement field gradient acts as the external loading. MOOSE does not offer a direct way of solving such problems.
+where ***P*** is a nonlinear operator acting on the total deformation gradient. Therefore, the macroscopic displacement field gradient acts as the external loading. MOOSE does not offer a direct way of solving such problems.
 
 In the module Tensor Mechanics, you can provide a strain and stress file for the solution of the problem. In the strain file, the macroscopic displacement gradient has to be added to the microscopic deformation gradient, and then the problem will be solved for the microscopic displacement field, together with the periodicy conditions for that displacement field.
 
